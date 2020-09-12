@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Space Widget Demo</title>
+    <script src="https://code.s4d.io/widget-space/production/bundle.js"></script>
+    <link rel="stylesheet" href="https://code.s4d.io/widget-space/production/main.css">
+  </head>
+  <body>
+    <div id="my-webexteams-widget" style="width: 500px; height: 500px;"/>
+    <script>
+      var widgetEl = document.getElementById('my-webexteams-widget');
+      // Init a new widget
+      webex.widget(widgetEl).spaceWidget({
+        accessToken: 'ZDcwZjNjOTItYzc4MC00NjZhLTkyNTItZWM3MjFlNDMyMjkzNjNkYzVjZGQtODQ2_PF84_e21bb5d5-a909-4502-9608-2708d7ac58c3',
+        destinationId: 'empowertestbot@webex.bot',
+        destinationType: 'userId',
+        paceActivities: {"files":true,"meet":true,"message":true,"people":true},
+        initialActivity: 'message',
+        secondaryActivitiesFullWidth: false,
+        composerActions: {"files":true,"meet":true,"message":true,"people":true}
+      });
+    </script>
+  </body>
+</html>
